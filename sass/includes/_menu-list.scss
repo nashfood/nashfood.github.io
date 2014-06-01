@@ -1,0 +1,87 @@
+.menu-list {
+  text-align: center;
+  %heading {
+    font-family: $opensans;
+    font-weight: 300;
+    text-align: center;
+  }
+
+
+  .day {
+    display: inline-block;
+    padding: 0.5em;
+    text-align: left;
+
+    h3 {
+      @extend %heading;
+      font-size: 1em;
+      padding: 0.25em;
+      margin-bottom: 0.25em;
+      border-bottom: 2px solid rgba($black, 0.9);
+    }
+
+    h4 {
+      @extend %heading;
+      font-size: 0.9em;
+    }
+  }
+
+  .items {
+    list-style-type: none;
+    font-family: $ptmono;
+    font-size: 1em;
+    padding: 0.5em;
+
+    %cell {
+      display: table-cell;
+      width: 50%;
+    }
+
+    .item {
+      display: table;
+      width: 100%;
+      border-bottom: 1px solid rgba($black, 0.3);
+      margin: 0.5em 0;
+      padding-bottom: 0.5em;
+
+      &.heading {
+        border-bottom: 0;
+        padding: 0;
+
+        .title {
+          font-size: 1rem;
+          font-weight: bold;
+        }
+      }
+
+      &.empty {
+        border-bottom: 0;
+      }
+    }
+
+    .title {
+      @extend %cell;
+      width: 80%;
+      font-weight: normal;
+      font-family: $opensans;
+      font-size: 0.9rem;
+      .subtitle {
+        font-weight: normal;
+      }
+
+      .description {
+        font-size: 0.8rem;
+        font-family: $opensans;
+        font-weight: 200;
+        padding-left: 0.5rem;
+        padding-bottom: 0.25rem;
+      }
+
+    }
+    .price {
+      @extend %cell;
+      text-align: right;
+      vertical-align: top;
+    }
+  }
+}

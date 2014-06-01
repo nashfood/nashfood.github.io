@@ -1,0 +1,11 @@
+{
+  "name": "nashfood",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-ruby-sass": "^0.4.3",
+    "gulp-react": "^0.3.3",
+    "gulp-uglify": "^0.3.0"
+  }
+}

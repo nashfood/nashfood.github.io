@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NASH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300|PT+Mono|Raleway:300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="bgimage"></div>
+<div class="container">
+  <div class="intro page">
+    <h1 class="logo"><a href="/">NASH FOOD</a></h1>
+    <div class="panel white">
+      <div class="row">
+        <i class="icon ion-android-clock"></i>
+        <div class="content">9:00 - 17:00</div>
+      </div>
+      <div class="row">
+        <i class="icon ion-calendar"></i>
+        <div class="content">MON-SAT</div>
+      </div>
+    </div>
+    <div class="panel black">
+      <div class="row">
+        <i class="icon ion-android-call"></i>
+        <div class="content">
+          <a href="tel:+353894713145">0894713145</a>
+        </div>
+      </div>
+      <div class="row">
+        <i class="icon ion-android-mail"></i>
+        <div class="content">
+          <a href="mailto:nashfood2014@gmail.com">nashfood2014@gmail.com</a>
+        </div>
+      </div>
+      <div class="row">
+        <i class="icon ion-map"></i>
+        <div class="content">
+          <ul>
+            <li>Užsakymai priimami viena diena prieš pristatymą.</li>
+            <li>Užsakymai pirmadieniui priimami šeštadienį.</li>
+            <li>Minimalus užsakymas - &euro;15.00</li>
+            <li>Pristatymas - &euro;1.00</li>
+            <li>Pristatymas nemokamas,užsakant už &euro;30.00 ir daugiau.</li>
+            <li>Pristatysime - Dublin 15, D7(Cabra), D11(Finglas), Lucan, Dunboyne.</li>
+            <li>Pristatymas į kitus rajonus ir kitu laiku,pagal susitarimą.</li>
+          </ul>
+          <ul>
+            <li>Orders are taken in advance, no later than a day before delivery.</li>
+            <li>Orders for Monday are taken on Saturday.</li>
+            <li>Minimum order - &euro;15.00</li>
+            <li>Delivery - &euro;1.00</li>
+            <li>Delivery is free for orders over &euro;30.00</li>
+            <li>Delivery area - Dublin 15, D7(Cabra), D11(Finglas), Lucan, Dunboyne.</li>
+            <li>Other areas by agreement</li>
+          </ul>
+          <ul>
+            <li>Заказ принимается не позже чем за день до доставки</li>
+            <li>Orders for Monday are taken on Saturday.</li>
+            <li>Минимальная сумма заказа - &euro;15.00</li>
+            <li>Доставка - &euro;1.00</li>
+            <li>Бесплатная доставка от &euro;30.00</li>
+            <li>Доставка производится - Dublin 15, D7(Cabra), D11(Finglas), Lucan, Dunboyne.</li>
+            <li>Остальные районы по предварительной договоренности</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="page menu">
+    <nav>
+      <ul class="nav">
+        <li class="selected">
+        <a href="/">MENU</a>
+        </li>
+        <li>
+        <a href="/second">
+          Papildomas - Extra - Допольнительное
+        </a>
+        </li>
+      </ul>
+    </nav>
+    <heading>
+    <h2 class="text-center">MENU</h2>
+    <div class="line long dark"></div>
+    <div class="line short dark"></div>
+    <div class="line long dark"></div>
+    </heading>
+    <div id="menuList" class="menu-list"></div>
+  </div>
+</div>
+<script src="/app.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+  var target = document.getElementById('menuList');
+  var component = cMenuList({
+    docid: "1wxljIJN-8Z-rOA9TmgqGpi8LnGnB_2o-cXq-EKdEDx8",
+    sheet: 'menu',
+    format: 'date',
+    orderby: 'date'
+  });
+
+  React.renderComponent(component, target);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.nav {
+  $border: 1px solid rgba($white, 0.7);
+  $selectedColor: lighten(#e56e5c, 15%);
+
+  display: table;
+  width: 100%;
+  list-style-type: none;
+  height: 3rem;
+  border-bottom: $border;
+  margin-bottom: 1rem;
+
+  li {
+    &:first-child {
+      border-right: $border;
+    }
+
+    &.selected {
+      background-color: rgba($white, 0.5);
+      a {
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      background-color: rgba($white, 0.35);
+    }
+
+    background-color: rgba($white, 0.25);
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 50%;
+  }
+
+  a {
+    display: block;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: $black;
+
+  }
+}

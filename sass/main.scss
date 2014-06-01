@@ -1,0 +1,64 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+@import "includes/normalize";
+@import "ionicons/ionicons";
+@import "includes/colors";
+@import "includes/fonts";
+@import "includes/headings";
+
+@import "includes/nav";
+@import "includes/logo";
+@import "includes/page";
+@import "includes/panel";
+@import "includes/intro";
+@import "includes/menu";
+@import "includes/menu-list";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $opensans;
+  font-weight: 300;
+}
+
+.bgimage {
+  $tablePortrait: new-breakpoint(max-width 768px);
+  $tabletLandscape: new-breakpoint(min-width 769px max-width 1024px);
+  $desktop: new-breakpoint(min-width 1025px max-width 1280px);
+  $desktop-large: new-breakpoint(min-width 1281px max-width 1920px);
+  $desktop-all: new-breakpoint(min-width 1921px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  @include media($tablePortrait) {
+    background: url(/intro-image_768-compressor.jpg) no-repeat center center;
+  }
+  @include media($tabletLandscape) {
+    background: url(/intro-image_1024-compressor.jpg) no-repeat center center;
+  }
+  @include media($desktop) {
+    background: url(/intro-image_1280-compressor.jpg) no-repeat center center;
+  }
+  @include media($desktop-large) {
+    background: url(/intro-image_1920-compressor.jpg) no-repeat center center;
+  }
+  @include media($desktop-all) {
+    background: url(/intro-image-compressor.jpg) no-repeat center center;
+  }
+  background-size: cover;
+}
+.container {
+  display: table;
+  min-width: 768px;
+  width: 100%;
+  height: 100%;
+}

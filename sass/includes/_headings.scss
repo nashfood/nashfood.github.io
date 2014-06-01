@@ -1,0 +1,43 @@
+.line {
+  display: block;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  margin: 0.5em auto;
+
+  &.long {
+    width: 150px;
+  }
+
+  &.medium {
+    width: 120px;
+  }
+
+  &.short {
+    width: 90px;
+  }
+
+  &.light {
+    border-color: $white;
+  }
+
+  &.dark {
+    border-bottom-color: $black;
+  }
+
+}
+
+h2 {
+  font-family: $raleway;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h3 {
+  @extend h2;
+  font-size: 1.5em;
+}
+
